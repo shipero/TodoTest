@@ -1,0 +1,36 @@
+﻿@model ToDo.Models.ToDoModels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ToDoModels</legend>
+
+    @*<div class="display-label">
+         @Html.DisplayNameFor(model => model.UserProfileUserId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UserProfileUserId)
+    </div>*@
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ToDoDisplay)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ToDoDisplay)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Completed)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Completed)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ToDoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
